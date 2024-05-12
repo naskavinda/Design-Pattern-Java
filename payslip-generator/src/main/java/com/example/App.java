@@ -21,13 +21,13 @@ public class App
         double totalSalary = basicSalary + allowance ;
         double netSalary = totalSalary - epfDeduction - sportClubCharge - stampDutyCharges;
 
-        System.out.println("Basic Salary: $" + basicSalary);
-        System.out.println("Allowance: $" + allowance);
-        System.out.println("EPF Deduction: $" + epfDeduction);
-        System.out.println("Company PEF Contribution: $" + companyPefContribution);
-        System.out.println("Sport Club Charge: $" + sportClubCharge);
-        System.out.println("Stamp Duty Charges: $" + stampDutyCharges);
-        System.out.println("Total Salary: $" + totalSalary);
-        System.out.println("Net Salary: $" + netSalary);
+        System.out.printf("%-35s %10.2f%n", "Basic Salary: ", basicSalary);
+        System.out.printf("%-35s %10.2f%n","Allowance: ", allowance);
+        System.out.printf("%-35s %10.2f%n","EPF Deduction: ", epfDeduction);
+        System.out.printf("%-35s %10.2f%n","Company PEF Contribution: ", companyPefContribution);
+        System.out.printf("%-35s %10.2f%n","Sport Club Charge: ", sportClubCharge);
+        System.out.printf("%-35s %10.2f%n","Stamp Duty Charges: ", stampDutyCharges);
+        System.out.printf("%-35s %10.2f%n","Total Salary: ", totalSalary);
+        System.out.printf("%-35s %10.2f%n","Net Salary: ", netSalary);
     }
 }
